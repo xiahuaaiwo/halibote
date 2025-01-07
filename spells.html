@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魔法咒语大全 - 哈利波特魔法世界</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="spells.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/1.png" alt="霍格沃茨徽章">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="houses.html">学院</a></li>
+                <li><a href="spells.html" class="active">魔法咒语</a></li>
+                <li><a href="characters.html">角色</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="spells-hero">
+            <h1>魔法咒语大全</h1>
+            <p class="hero-subtitle">探索神奇的魔法世界</p>
+            <div class="spell-stats">
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">已收录咒语</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">魔法类别</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">★★★</span>
+                    <span class="stat-label">难度等级</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="spell-categories">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">全部</button>
+                <button class="filter-btn" data-category="charm">魔咒</button>
+                <button class="filter-btn" data-category="transfiguration">变形咒</button>
+                <button class="filter-btn" data-category="defense">防御咒</button>
+                <button class="filter-btn" data-category="healing">治疗咒</button>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="spell-search" placeholder="搜索咒语...">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <div class="spells-grid">
+                <div class="spell-card" data-category="charm">
+                    <div class="spell-header">
+                        <h3>荧光闪烁</h3>
+                        <span class="difficulty">★</span>
+                    </div>
+                    <div class="spell-content">
+                        <div class="spell-info">
+                            <p class="spell-latin">Lumos</p>
+                            <p class="spell-description">魔杖尖端发出光芒，照亮黑暗</p>
+                        </div>
+                        <div class="spell-details">
+                            <span class="spell-type">类型：照明咒语</span>
+                            <span class="spell-movement">挥杖动作：向上轻点</span>
+                        </div>
+                        <div class="spell-example">
+                            <video class="spell-video" poster="images/spells/lumos-poster.jpg">
+                                <source src="videos/lumos.mp4" type="video/mp4">
+                            </video>
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spell-card" data-category="defense">
+                    <div class="spell-header">
+                        <h3>除你武器</h3>
+                        <span class="difficulty">★★</span>
+                    </div>
+                    <div class="spell-content">
+                        <div class="spell-info">
+                            <p class="spell-latin">Expelliarmus</p>
+                            <p class="spell-description">缴械咒，使对手的魔杖脱手</p>
+                        </div>
+                        <div class="spell-details">
+                            <span class="spell-type">类型：防御咒语</span>
+                            <span class="spell-movement">挥杖动作：向右划弧</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spell-card" data-category="transfiguration">
+                    <div class="spell-header">
+                        <h3>变形咒</h3>
+                        <span class="difficulty">★★★</span>
+                    </div>
+                    <div class="spell-content">
+                        <div class="spell-info">
+                            <p class="spell-latin">Vera Verto</p>
+                            <p class="spell-description">将动物变成水杯</p>
+                        </div>
+                        <div class="spell-details">
+                            <span class="spell-type">类型：变形咒语</span>
+                            <span class="spell-movement">轻点三下，顺时针旋转</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="spell-card" data-category="healing">
+                    <div class="spell-header">
+                        <h3>愈合如初</h3>
+                        <span class="difficulty">★★</span>
+                    </div>
+                    <div class="spell-content">
+                        <div class="spell-info">
+                            <p class="spell-latin">Episkey</p>
+                            <p class="spell-description">治愈轻微伤口和骨折</p>
+                        </div>
+                        <div class="spell-details">
+                            <span class="spell-type">类型：治疗咒语</span>
+                            <span class="spell-movement">指向伤处，画圆</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="spell-card" data-category="charm">
+                    <div class="spell-header">
+                        <h3>羽加迪姆勒维奥萨</h3>
+                        <span class="difficulty">★</span>
+                    </div>
+                    <div class="spell-content">
+                        <div class="spell-info">
+                            <p class="spell-latin">Wingardium Leviosa</p>
+                            <p class="spell-description">使物体漂浮起来</p>
+                        </div>
+                        <div class="spell-details">
+                            <span class="spell-type">类型：漂浮咒语</span>
+                            <span class="spell-movement">挥动并点击</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="spell-card" data-category="charm">
+                    <div class="spell-header">
+                        <h3>飞来咒</h3>
+                        <span class="difficulty">★★</span>
+                    </div>
+                    <div class="spell-content">
+                        <div class="spell-info">
+                            <p class="spell-latin">Accio</p>
+                            <p class="spell-description">召唤指定物品到施咒者身边</p>
+                        </div>
+                        <div class="spell-details">
+                            <span class="spell-type">类型：召唤咒语</span>
+                            <span class="spell-movement">向内拉动</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="spell-learning">
+            <h2>魔法学习指南</h2>
+            <div class="learning-grid">
+                <div class="learning-card">
+                    <div class="card-icon">📚</div>
+                    <h3>基础理论</h3>
+                    <p>了解魔法的基本原理和注意事项</p>
+                    <a href="#" class="learn-more">查看详情</a>
+                </div>
+                <div class="learning-card">
+                    <div class="card-icon">✨</div>
+                    <h3>实践练习</h3>
+                    <p>标准的咒语施放方法和技巧</p>
+                    <a href="#" class="learn-more">开始练习</a>
+                </div>
+                <div class="learning-card">
+                    <div class="card-icon">⚠️</div>
+                    <h3>安全指南</h3>
+                    <p>魔法使用的安全准则和禁忌</p>
+                    <a href="#" class="learn-more">必读内容</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="spell-practice">
+            <h2>咒语练习区</h2>
+            <div class="practice-area">
+                <div class="wand-movement">
+                    <canvas id="wandCanvas"></canvas>
+                    <p>使用鼠标绘制魔杖轨迹</p>
+                </div>
+                <div class="spell-pronunciation">
+                    <h3>发音指导</h3>
+                    <div class="pronunciation-guide">
+                        <audio id="spellAudio" controls>
+                            <source src="spell-audio.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 霍格沃茨魔法学校</p>
+    </footer>
+
+    <script src="spells.js"></script>
+</body>
+</html> 

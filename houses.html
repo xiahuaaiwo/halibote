@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>霍格沃茨四大学院 - 哈利波特魔法世界</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="houses.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/1.png" alt="霍格沃茨徽章">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="houses.html" class="active">学院</a></li>
+                <li><a href="spells.html">魔法咒语</a></li>
+                <li><a href="characters.html">角色</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="houses-hero">
+            <h1>霍格沃茨四大学院</h1>
+            <p class="hero-subtitle">每个学院都有其独特的历史与传统</p>
+            <div class="house-stats">
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">年历史传承</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">位伟大创始人</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">无尽的魔法潜能</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="houses-detail">
+            <div class="houses-intro">
+                <p class="intro-text">霍格沃茨的四个学院代表着不同的品格特质与魔法传统。每个学生通过分院帽的选择，找到最适合自己成长的地方。</p>
+            </div>
+            <div class="house-tabs">
+                <button class="tab-btn active" data-house="gryffindor">格兰芬多</button>
+                <button class="tab-btn" data-house="slytherin">斯莱特林</button>
+                <button class="tab-btn" data-house="ravenclaw">拉文克劳</button>
+                <button class="tab-btn" data-house="hufflepuff">赫奇帕奇</button>
+            </div>
+
+            <div class="house-content">
+                <div class="house-panel active" id="gryffindor">
+                    <div class="house-quote">
+                        <blockquote>"你也许属于格兰芬多，那里有埋藏在心底的勇敢，他们的胆识、气魄和侠义使格兰芬多出类拔萃"</blockquote>
+                        <cite>—— 分院帽</cite>
+                    </div>
+                    <div class="house-banner">
+                        <img src="https://via.placeholder.com/1200x400/740001/ffd700?text=Gryffindor" alt="格兰芬多横幅">
+                    </div>
+                    <div class="house-info">
+                        <div class="house-header">
+                            <h2>格兰芬多</h2>
+                            <div class="house-emblem">
+                                <img src="https://via.placeholder.com/150x150/740001/ffd700?text=G" alt="格兰芬多徽章">
+                            </div>
+                        </div>
+                        <div class="house-details">
+                            <div class="detail-item">
+                                <h3>创始人</h3>
+                                <p>戈德里克·格兰芬多</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院特质</h3>
+                                <ul>
+                                    <li>勇敢</li>
+                                    <li>无畏</li>
+                                    <li>正义</li>
+                                    <li>骑士精神</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院颜色</h3>
+                                <p>深红色与金色</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院动物</h3>
+                                <p>狮子</p>
+                            </div>
+                        </div>
+                        <div class="house-description">
+                            <h3>学院简介</h3>
+                            <p>格兰芬多学院以其勇气和骑士精神而闻名。这里培养出了许多伟大的巫师，包括阿不思·邓布利多和哈利·波特。学院的学生以其无畏的精神和正义感而著称。</p>
+                        </div>
+                        <div class="famous-members">
+                            <h3>著名校友</h3>
+                            <div class="members-grid">
+                                <div class="member-card">
+                                    <img src="https://via.placeholder.com/100x100/740001/ffd700?text=HP" alt="哈利·波特">
+                                    <h4>哈利·波特</h4>
+                                    <p>被选中的男孩</p>
+                                </div>
+                                <div class="member-card">
+                                    <img src="https://via.placeholder.com/100x100/740001/ffd700?text=HG" alt="赫敏·格兰杰">
+                                    <h4>赫敏·格兰杰</h4>
+                                    <p>魔法部部长</p>
+                                </div>
+                                <div class="member-card">
+                                    <img src="https://via.placeholder.com/100x100/740001/ffd700?text=RW" alt="罗恩·韦斯莱">
+                                    <h4>罗恩·韦斯莱</h4>
+                                    <p>傲罗办公室主任</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-achievements">
+                        <h3>历史荣誉</h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-card">
+                                <span class="achievement-number">52</span>
+                                <p>魁地奇杯冠军</p>
+                            </div>
+                            <div class="achievement-card">
+                                <span class="achievement-number">38</span>
+                                <p>学院杯冠军</p>
+                            </div>
+                            <div class="achievement-card">
+                                <span class="achievement-number">127</span>
+                                <p>杰出校友</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-traditions">
+                        <h3>学院传统</h3>
+                        <div class="traditions-list">
+                            <div class="tradition-item">
+                                <h4>入学仪式</h4>
+                                <p>新生在公共休息室的欢迎晚会上接受学长的祝福</p>
+                            </div>
+                            <div class="tradition-item">
+                                <h4>勇气试炼</h4>
+                                <p>每年举办的冒险挑战活动，培养学生的勇气和团队精神</p>
+                            </div>
+                            <div class="tradition-item">
+                                <h4>英雄纪念日</h4>
+                                <p>纪念为保护霍格沃茨而牺牲的勇士们</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house-panel" id="slytherin">
+                    <div class="house-quote">
+                        <blockquote>"或许斯莱特林会助你走向辉煌，在那里，你会交到真诚的朋友，这些狡黠之人精于谋划，不择手段以达目的"</blockquote>
+                        <cite>—— 分院帽</cite>
+                    </div>
+                    <div class="house-banner">
+                        <img src="https://via.placeholder.com/1200x400/1a472a/ffd700?text=Slytherin" alt="斯莱特林横幅">
+                    </div>
+                    <div class="house-info">
+                        <div class="house-header">
+                            <h2>斯莱特林</h2>
+                            <div class="house-emblem">
+                                <img src="https://via.placeholder.com/150x150/1a472a/ffd700?text=S" alt="斯莱特林徽章">
+                            </div>
+                        </div>
+                        <div class="house-details">
+                            <div class="detail-item">
+                                <h3>创始人</h3>
+                                <p>萨拉查·斯莱特林</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院特质</h3>
+                                <ul>
+                                    <li>野心</li>
+                                    <li>狡猾</li>
+                                    <li>机智</li>
+                                    <li>自我保护</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院颜色</h3>
+                                <p>绿色与银色</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院动物</h3>
+                                <p>蛇</p>
+                            </div>
+                        </div>
+                        <div class="house-description">
+                            <h3>学院简介</h3>
+                            <p>斯莱特林学院以其精明和野心而闻名。这里培养出了许多强大的巫师，虽然其中不乏黑巫师，但也有许多杰出的人才。</p>
+                        </div>
+                        <div class="famous-members">
+                            <h3>著名校友</h3>
+                            <div class="members-grid">
+                                <div class="member-card">
+                                    <img src="https://via.placeholder.com/100x100/1a472a/ffd700?text=SS" alt="西弗勒斯·斯内普">
+                                    <h4>西弗勒斯·斯内普</h4>
+                                    <p>魔药学教授</p>
+                                </div>
+                                <div class="member-card">
+                                    <img src="https://via.placeholder.com/100x100/1a472a/ffd700?text=DM" alt="德拉科·马尔福">
+                                    <h4>德拉科·马尔福</h4>
+                                    <p>纯血统巫师</p>
+                                </div>
+                                <div class="member-card">
+                                    <img src="https://via.placeholder.com/100x100/1a472a/ffd700?text=BL" alt="贝拉特里克斯·莱斯特兰奇">
+                                    <h4>贝拉特里克斯</h4>
+                                    <p>食死徒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-achievements">
+                        <h3>历史荣誉</h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-card">
+                                <span class="achievement-number">48</span>
+                                <p>魁地奇杯冠军</p>
+                            </div>
+                            <div class="achievement-card">
+                                <span class="achievement-number">42</span>
+                                <p>学院杯冠军</p>
+                            </div>
+                            <div class="achievement-card">
+                                <span class="achievement-number">98</span>
+                                <p>杰出校友</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-traditions">
+                        <h3>学院传统</h3>
+                        <div class="traditions-list">
+                            <div class="tradition-item">
+                                <h4>纯血统集会</h4>
+                                <p>定期举办的社交活动，维系巫师家族间的联系</p>
+                            </div>
+                            <div class="tradition-item">
+                                <h4>蛇语课程</h4>
+                                <p>为有天赋的学生开设的特殊课程</p>
+                            </div>
+                            <div class="tradition-item">
+                                <h4>地下密室探索</h4>
+                                <p>了解学院创始人留下的神秘遗产</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house-panel" id="ravenclaw">
+                    <div class="house-quote">
+                        <blockquote>"如果你头脑精明，睿智过人，拉文克劳正好适合你这样好学的人，求知欲强的人总能在这里找到志同道合的伙伴"</blockquote>
+                        <cite>—— 分院帽</cite>
+                    </div>
+                    <div class="house-banner">
+                        <img src="https://via.placeholder.com/1200x400/0e1a40/ffd700?text=Ravenclaw" alt="拉文克劳横幅">
+                    </div>
+                    <div class="house-info">
+                        <div class="house-header">
+                            <h2>拉文克劳</h2>
+                            <div class="house-emblem">
+                                <img src="https://via.placeholder.com/150x150/0e1a40/ffd700?text=R" alt="拉文克劳徽章">
+                            </div>
+                        </div>
+                        <div class="house-details">
+                            <div class="detail-item">
+                                <h3>创始人</h3>
+                                <p>罗伊纳·拉文克劳</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院特质</h3>
+                                <ul>
+                                    <li>智慧</li>
+                                    <li>创造力</li>
+                                    <li>求知欲</li>
+                                    <li>睿智</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院颜色</h3>
+                                <p>蓝色与铜色</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院动物</h3>
+                                <p>鹰</p>
+                            </div>
+                        </div>
+                        <div class="house-description">
+                            <h3>学院简介</h3>
+                            <p>拉文克劳学院以其智慧和学术追求而闻名。这里的学生热爱学习，富有创造力，常常在魔法研究领域有重要突破。</p>
+                        </div>
+                        <div class="famous-members">
+                            <h3>著名校友</h3>
+                            <div class="members-grid">
+                                <div class="member-card">
+                                    <img src="https://via.placeholder.com/100x100/0e1a40/ffd700?text=LL" alt="卢娜·洛夫古德">
+                                    <h4>卢娜·洛夫古德</h4>
+                                    <p>神奇动物学家</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-achievements">
+                        <h3>历史荣誉</h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-card">
+                                <span class="achievement-number">35</span>
+                                <p>魁地奇杯冠军</p>
+                            </div>
+                            <div class="achievement-card">
+                                <span class="achievement-number">45</span>
+                                <p>学院杯冠军</p>
+                            </div>
+                            <div class="achievement-card">
+                                <span class="achievement-number">156</span>
+                                <p>学术成就奖</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-traditions">
+                        <h3>学院传统</h3>
+                        <div class="traditions-list">
+                            <div class="tradition-item">
+                                <h4>智慧竞赛</h4>
+                                <p>每月举办的学术问答比赛，考验学生的知识储备</p>
+                            </div>
+                            <div class="tradition-item">
+                                <h4>图书馆之夜</h4>
+                                <p>通宵研读古籍的传统活动</p>
+                            </div>
+                            <div class="tradition-item">
+                                <h4>创新魔法工坊</h4>
+                                <p>鼓励学生发明创新魔法的实验室</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house-panel" id="hufflepuff">
+                    <div class="house-quote">
+                        <blockquote>"你也许属于赫奇帕奇，那里有公正善良的人，赫奇帕奇的学子们忠诚诚实，不怕辛劳"</blockquote>
+                        <cite>—— 分院帽</cite>
+                    </div>
+                    <div class="house-banner">
+                        <img src="https://via.placeholder.com/1200x400/ecb939/000000?text=Hufflepuff" alt="赫奇帕奇横幅">
+                    </div>
+                    <div class="house-info">
+                        <div class="house-header">
+                            <h2>赫奇帕奇</h2>
+                            <div class="house-emblem">
+                                <img src="https://via.placeholder.com/150x150/ecb939/000000?text=H" alt="赫奇帕奇徽章">
+                            </div>
+                        </div>
+                        <div class="house-details">
+                            <div class="detail-item">
+                                <h3>创始人</h3>
+                                <p>赫尔加·赫奇帕奇</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院特质</h3>
+                                <ul>
+                                    <li>忠诚</li>
+                                    <li>勤奋</li>
+                                    <li>公正</li>
+                                    <li>友善</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院颜色</h3>
+                                <p>黄色与黑色</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>学院动物</h3>
+                                <p>獾</p>
+                            </div>
+                        </div>
+                        <div class="house-description">
+                            <h3>学院简介</h3>
+                            <p>赫奇帕奇学院以其包容和友善而著称。这里的学生勤奋努力，重视公平正义，是最忠诚可靠的朋友。</p>
+                        </div>
+                        <div class="famous-members">
+                            <h3>著名校友</h3>
+                            <div class="members-grid">
+                                <div class="member-card">
+                                    <img src="https://via.placeholder.com/100x100/ecb939/000000?text=NT" alt="纽特·斯卡曼德">
+                                    <h4>纽特·斯卡曼德</h4>
+                                    <p>神奇动物学家</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-achievements">
+                        <h3>历史荣誉</h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-card">
+                                <span class="achievement-number">32</span>
+                                <p>魁地奇杯冠军</p>
+                            </div>
+                            <div class="achievement-card">
+                                <span class="achievement-number">36</span>
+                                <p>学院杯冠军</p>
+                            </div>
+                            <div class="achievement-card">
+                                <span class="achievement-number">89</span>
+                                <p>友善奖章</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-traditions">
+                        <h3>学院传统</h3>
+                        <div class="traditions-list">
+                            <div class="tradition-item">
+                                <h4>植物园照料</h4>
+                                <p>维护霍格沃茨草药园的传统责任</p>
+                            </div>
+                            <div class="tradition-item">
+                                <h4>友谊茶会</h4>
+                                <p>每周举办的跨学院交流活动</p>
+                            </div>
+                            <div class="tradition-item">
+                                <h4>新生辅导</h4>
+                                <p>帮助一年级学生适应魔法学校生活</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 霍格沃茨魔法学校</p>
+    </footer>
+
+    <script src="houses.js"></script>
+</body>
+</html> 

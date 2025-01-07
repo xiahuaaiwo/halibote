@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魔法世界角色 - 哈利波特魔法世界</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="characters.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/1.png" alt="霍格沃茨徽章">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="houses.html">学院</a></li>
+                <li><a href="spells.html">魔法咒语</a></li>
+                <li><a href="characters.html" class="active">角色</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="characters-hero">
+            <h1>魔法世界角色</h1>
+            <p class="hero-subtitle">认识这些令人难忘的巫师们</p>
+            <div class="character-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="student">学生</button>
+                <button class="filter-btn" data-filter="teacher">教师</button>
+                <button class="filter-btn" data-filter="order">凤凰社</button>
+                <button class="filter-btn" data-filter="death-eater">食死徒</button>
+            </div>
+        </section>
+
+        <section id="characters-grid">
+            <!-- 主角团 -->
+            <div class="character-card" data-category="student order">
+                <div class="character-image">
+                    <div class="character-placeholder">H</div>
+                    <div class="character-house gryffindor"></div>
+                </div>
+                <div class="character-info">
+                    <h3>哈利·波特</h3>
+                    <p class="character-title">被选中的男孩</p>
+                    <div class="character-details">
+                        <span class="detail-item">格兰芬多</span>
+                        <span class="detail-item">凤凰社</span>
+                    </div>
+                    <p class="character-description">
+                        大难不死的男孩，命中注定要与伏地魔对抗的救世主。
+                    </p>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">魔法</span>
+                            <div class="stat-bar" style="--percent: 85%"></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">勇气</span>
+                            <div class="stat-bar" style="--percent: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 教师 -->
+            <div class="character-card" data-category="teacher order">
+                <div class="character-image">
+                    <div class="character-placeholder">D</div>
+                    <div class="character-house gryffindor"></div>
+                </div>
+                <div class="character-info">
+                    <h3>阿不思·邓布利多</h3>
+                    <p class="character-title">霍格沃茨校长</p>
+                    <div class="character-details">
+                        <span class="detail-item">最伟大的白巫师</span>
+                        <span class="detail-item">凤凰社创始人</span>
+                    </div>
+                    <p class="character-description">
+                        当代最伟大的白巫师，霍格沃茨的智慧领袖。
+                    </p>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">魔法</span>
+                            <div class="stat-bar" style="--percent: 100%"></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">智慧</span>
+                            <div class="stat-bar" style="--percent: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 赫敏 -->
+            <div class="character-card" data-category="student order">
+                <div class="character-image">
+                    <div class="character-placeholder">H</div>
+                    <div class="character-house gryffindor"></div>
+                </div>
+                <div class="character-info">
+                    <h3>赫敏·格兰杰</h3>
+                    <p class="character-title">最聪明的女巫</p>
+                    <div class="character-details">
+                        <span class="detail-item">格兰芬多</span>
+                        <span class="detail-item">级长</span>
+                    </div>
+                    <p class="character-description">
+                        天资聪颖的年轻女巫，在各个领域都展现出非凡的才能。
+                    </p>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">智慧</span>
+                            <div class="stat-bar" style="--percent: 98%"></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">魔咒</span>
+                            <div class="stat-bar" style="--percent: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 斯内普 -->
+            <div class="character-card" data-category="teacher death-eater order">
+                <div class="character-image">
+                    <div class="character-placeholder">S</div>
+                    <div class="character-house slytherin"></div>
+                </div>
+                <div class="character-info">
+                    <h3>西弗勒斯·斯内普</h3>
+                    <p class="character-title">魔药学教授</p>
+                    <div class="character-details">
+                        <span class="detail-item">斯莱特林院长</span>
+                        <span class="detail-item">双面间谍</span>
+                    </div>
+                    <p class="character-description">
+                        复杂而神秘的角色，为了爱情而献身于保护哈利的使命。
+                    </p>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">魔药</span>
+                            <div class="stat-bar" style="--percent: 100%"></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">黑魔法</span>
+                            <div class="stat-bar" style="--percent: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 伏地魔 -->
+            <div class="character-card" data-category="death-eater">
+                <div class="character-image">
+                    <div class="character-placeholder">V</div>
+                    <div class="character-house slytherin"></div>
+                </div>
+                <div class="character-info">
+                    <h3>汤姆·里德尔</h3>
+                    <p class="character-title">黑魔王</p>
+                    <div class="character-details">
+                        <span class="detail-item">最强黑巫师</span>
+                        <span class="detail-item">食死徒领袖</span>
+                    </div>
+                    <p class="character-description">
+                        有史以来最危险的黑巫师，追求永生与力量的化身。
+                    </p>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">黑魔法</span>
+                            <div class="stat-bar" style="--percent: 100%"></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">力量</span>
+                            <div class="stat-bar" style="--percent: 98%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="character-timeline">
+            <h2>重要人物时间线</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1881</div>
+                    <div class="timeline-content">
+                        <h3>阿不思·邓布利多出生</h3>
+                        <p>在戈德里克山谷出生，展现出非凡的魔法天赋。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1926</div>
+                    <div class="timeline-content">
+                        <h3>汤姆·里德尔出生</h3>
+                        <p>在伦敦孤儿院出生，后成为伏地魔。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1960</div>
+                    <div class="timeline-content">
+                        <h3>西弗勒斯·斯内普出生</h3>
+                        <p>在蜘蛛尾巷出生，母亲是女巫艾琳·普林斯。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1980</div>
+                    <div class="timeline-content">
+                        <h3>哈利·波特出生</h3>
+                        <p>在戈德里克山谷出生，父母是詹姆和莉莉·波特。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1991</div>
+                    <div class="timeline-content">
+                        <h3>进入霍格沃茨</h3>
+                        <p>哈利、罗恩和赫敏开始他们的魔法学习之旅。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="character-relationships">
+            <h2>角色关系网络</h2>
+            <div class="relationship-map">
+                <div class="relationship-container">
+                    <!-- 中心角色 -->
+                    <div class="character-node central" data-character="harry">
+                        <div class="character-placeholder">哈利</div>
+                        <span>哈利·波特</span>
+                    </div>
+                    
+                    <!-- 主要关系圈 -->
+                    <div class="relationship-circle primary">
+                        <div class="character-node" data-character="hermione" style="top: 40%; left: 75%;">
+                            <div class="character-placeholder">赫敏</div>
+                            <span>赫敏·格兰杰</span>
+                        </div>
+                        <div class="character-node" data-character="ron" style="top: 60%; left: 75%;">
+                            <div class="character-placeholder">罗恩</div>
+                            <span>罗恩·韦斯莱</span>
+                        </div>
+                        <div class="character-node" data-character="dumbledore" style="top: 25%; left: 50%;">
+                            <div class="character-placeholder">邓布利多</div>
+                            <span>邓布利多</span>
+                        </div>
+                        <div class="character-node" data-character="sirius" style="top: 75%; left: 50%;">
+                            <div class="character-placeholder">小天狼星</div>
+                            <span>小天狼星·布莱克</span>
+                        </div>
+                        <div class="character-node" data-character="ginny" style="top: 50%; left: 25%;">
+                            <div class="character-placeholder">金妮</div>
+                            <span>金妮·韦斯莱</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 次要关系圈 -->
+                    <div class="relationship-circle secondary">
+                        <div class="character-node" data-character="snape" style="top: 30%; left: 85%;">
+                            <div class="character-placeholder">斯内普</div>
+                            <span>斯内普</span>
+                        </div>
+                        <div class="character-node" data-character="voldemort" style="top: 70%; left: 85%;">
+                            <div class="character-placeholder">伏地魔</div>
+                            <span>伏地魔</span>
+                        </div>
+                        <div class="character-node" data-character="lupin" style="top: 20%; left: 70%;">
+                            <div class="character-placeholder">卢平</div>
+                            <span>莱姆斯·卢平</span>
+                        </div>
+                        <div class="character-node" data-character="malfoy" style="top: 80%; left: 70%;">
+                            <div class="character-placeholder">马尔福</div>
+                            <span>德拉科·马尔福</span>
+                        </div>
+                        <div class="character-node" data-character="hagrid" style="top: 15%; left: 30%;">
+                            <div class="character-placeholder">海格</div>
+                            <span>鲁伯·海格</span>
+                        </div>
+                        <div class="character-node" data-character="mcgonagall" style="top: 85%; left: 30%;">
+                            <div class="character-placeholder">麦格</div>
+                            <span>米勒娃·麦格</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 连接线 -->
+                    <div class="relationship-lines">
+                        <!-- 友好关系线 -->
+                        <svg class="relationship-svg">
+                            <path class="relationship-line friend" d="M0,0 C50,50 150,50 200,0" />
+                            <!-- 其他连接线将通过 JS 动态生成 -->
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- 关系说明 -->
+                <div class="relationship-legend">
+                    <div class="legend-item">
+                        <span class="line friend"></span>
+                        <span>密友/盟友</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="line enemy"></span>
+                        <span>敌人/对手</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="line complex"></span>
+                        <span>复杂关系</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="line family"></span>
+                        <span>家人/血缘</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="line mentor"></span>
+                        <span>师徒关系</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 霍格沃茨魔法学校</p>
+    </footer>
+
+    <script src="characters.js"></script>
+</body>
+</html> 

@@ -1,0 +1,582 @@
+/* 角色页面样式 */
+#characters-hero {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(44, 44, 44, 0.9)),
+                url('images/characters/hero-bg.jpg') center/cover;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#characters-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+.character-filters {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    background: rgba(44, 44, 44, 0.8);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 25px;
+    color: #ffd700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 215, 0, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.filter-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #ffd700;
+    color: #1a1a1a;
+}
+
+/* 角色卡片网格 */
+#characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.character-card {
+    background: rgba(44, 44, 44, 0.9);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.character-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 215, 0, 0.1),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.character-card:hover::after {
+    left: 100%;
+}
+
+.character-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background: rgba(44, 44, 44, 0.8);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-image img {
+    width: 150px;
+    height: 150px;
+    background: #2c2c2c;
+    border: 2px solid #ffd700;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.character-card:hover .character-image img {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.character-house {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+    background: #2c2c2c;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.character-house.gryffindor { background: #740001; }
+.character-house.slytherin { background: #1a472a; }
+.character-house.ravenclaw { background: #0e1a40; }
+.character-house.hufflepuff { background: #ecb939; }
+
+.character-info {
+    padding: 1.5rem;
+}
+
+.character-info h3 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.character-title {
+    color: #cccccc;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.character-details {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.detail-item {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #ffd700;
+}
+
+.character-description {
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.character-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stat-label {
+    color: #cccccc;
+    min-width: 60px;
+}
+
+.stat-bar {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: var(--percent);
+    background: #ffd700;
+    border-radius: 3px;
+}
+
+/* 时间线样式 */
+.timeline {
+    max-width: 800px;
+    margin: 3rem auto;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255, 215, 0, 0.4),
+        rgba(255, 215, 0, 0.4),
+        transparent
+    );
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.timeline-date {
+    background: #ffd700;
+    color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+    transform: translateX(-50%) scale(1);
+    transition: transform 0.3s ease;
+}
+
+.timeline-date:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+.timeline-content {
+    background: rgba(44, 44, 44, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 300px;
+    margin-left: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .character-filters {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .timeline::before {
+        left: 2rem;
+    }
+
+    .timeline-date {
+        left: 2rem;
+    }
+
+    .timeline-content {
+        margin-left: 4rem;
+    }
+} 
+
+/* 角色关系网络样式 */
+#character-relationships {
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.9), rgba(44, 44, 44, 0.9));
+}
+
+.relationship-map {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.relationship-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+}
+
+/* 角色节点样式 */
+.character-node {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+    transform-origin: center center;
+    background: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-node.central {
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.character-node img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character-node span {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: #ffd700;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.character-node:hover {
+    transform: scale(1.1);
+    z-index: 20;
+}
+
+.character-node:hover span {
+    opacity: 1;
+}
+
+/* 关系圈样式 */
+.relationship-circle {
+    position: absolute;
+    border: 1px dashed rgba(255, 215, 0, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.relationship-circle.primary {
+    width: 300px;
+    height: 300px;
+}
+
+.relationship-circle.secondary {
+    width: 500px;
+    height: 500px;
+}
+
+/* 连接线样式 */
+.relationship-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.relationship-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.relationship-line {
+    fill: none;
+    stroke-width: 2;
+    stroke-dasharray: 4;
+    animation: flowLine 1s linear infinite;
+}
+
+@keyframes flowLine {
+    from {
+        stroke-dashoffset: 8;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* 关系说明样式 */
+.relationship-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #cccccc;
+}
+
+.legend-item .line {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+}
+
+.line.friend { background: #4CAF50; }
+.line.enemy { background: #f44336; }
+.line.complex { background: #9C27B0; }
+.line.family { background: #FF9800; }
+.line.mentor { background: #2196F3; }
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .relationship-container {
+        height: 400px;
+    }
+
+    .character-node {
+        width: 60px;
+        height: 60px;
+    }
+
+    .character-node.central {
+        width: 90px;
+        height: 90px;
+    }
+
+    .relationship-circle.primary {
+        width: 200px;
+        height: 200px;
+    }
+
+    .relationship-circle.secondary {
+        width: 300px;
+        height: 300px;
+    }
+} 
+
+/* 不同类型关系的线条样式 */
+.relationship-line.friend {
+    stroke: #4CAF50;
+    stroke-dasharray: none;
+}
+
+.relationship-line.enemy {
+    stroke: #f44336;
+    stroke-dasharray: 4;
+}
+
+.relationship-line.complex {
+    stroke: #9C27B0;
+    stroke-dasharray: 6,2;
+}
+
+.relationship-line.family {
+    stroke: #FF9800;
+    stroke-dasharray: none;
+    stroke-width: 3;
+}
+
+.relationship-line.mentor {
+    stroke: #2196F3;
+    stroke-dasharray: 8,2;
+}
+
+/* 关系标签样式 */
+.relationship-label {
+    fill: #cccccc;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.relationship-label textPath {
+    fill: #ffd700;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.relationship-line:hover + .relationship-label textPath {
+    opacity: 1;
+} 
+
+.character-placeholder {
+    width: 150px;
+    height: 150px;
+    background: #2c2c2c;
+    border: 2px solid #ffd700;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #ffd700;
+    font-family: 'Times New Roman', serif;
+    transition: all 0.3s ease;
+}
+
+.character-card:hover .character-placeholder {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+} 
+
+.character-node .character-placeholder {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.character-node.central .character-placeholder {
+    font-size: 1.5rem;
+} 

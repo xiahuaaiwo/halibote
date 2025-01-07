@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈利波特魔法世界</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/1.png" alt="霍格沃茨徽章">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="houses.html">学院</a></li>
+                <li><a href="spells.html">魔法咒语</a></li>
+                <li><a href="characters.html">角色</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="magic-particles"></div>
+            <h1>欢迎来到霍格沃茨魔法学校</h1>
+            <p class="hero-subtitle">开启你的魔法之旅</p>
+            <div class="hero-cta">
+                <a href="#welcome-message" class="cta-btn primary">开始探索</a>
+                <a href="houses.html" class="cta-btn secondary">查看学院</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hogwarts-castle.jpg" alt="霍格沃茨城堡">
+                <!-- <div class="castle-placeholder" style="width: 1200px; height: 600px;"></div> -->
+            </div>
+            <div class="floating-objects">
+                <div class="floating-item owl">🦉</div>
+                <div class="floating-item broom">🧹</div>
+                <div class="floating-item wand">⚡</div>
+            </div>
+            <div class="scroll-indicator">
+                <span>向下滚动探索更多</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <section id="quick-links">
+            <div class="links-container">
+                <div class="quick-link">
+                    <div class="link-icon">📚</div>
+                    <h3>课程安排</h3>
+                    <p>查看最新魔法课程表</p>
+                </div>
+                <div class="quick-link">
+                    <div class="link-icon">🏆</div>
+                    <h3>学院分数</h3>
+                    <p>实时学院杯积分榜</p>
+                </div>
+                <div class="quick-link">
+                    <div class="link-icon">🎯</div>
+                    <h3>魁地奇</h3>
+                    <p>赛事日程与成绩</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="welcome-message">
+            <div class="container">
+                <div class="message-box">
+                    <h2>亲爱的魔法师</h2>
+                    <p class="magical-text">你的霍格沃茨录取通知书已经到达！</p>
+                    <a href="spells.html" class="magic-btn">开启魔法之旅</a>
+                </div>
+                <div class="acceptance-letter">
+                    <img src="images/acceptance-letter.png" alt="录取通知书">
+                    <!-- <div class="letter-seal"></div> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="announcements">
+            <h2>最新消息</h2>
+            <div class="news-ticker">
+                <div class="news-controls">
+                    <button class="news-prev" aria-label="上一条新闻"></button>
+                    <button class="news-next" aria-label="下一条新闻"></button>
+                </div>
+                <div class="news-container">
+                    <div class="news-item">
+                        <span class="news-date">2024/03/20</span>
+                        <p>魁地奇联赛即将开始，各学院请做好准备</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2024/03/18</span>
+                        <p>新学期魔药课程表已发布，请各位同学查看并准备所需材料</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2024/03/15</span>
+                        <p>禁林地图已更新，新增危险区域标记，请务必注意安全</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2024/03/12</span>
+                        <p>霍格莫德周末活动安排已公布，请三年级以上学生注意查看</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="upcoming-events">
+            <h2 class="section-title">近期活动</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date">25</span>
+                        <span class="month">三月</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>魔药学大赛</h3>
+                        <p>斯内普教授主持的年度魔药制作比赛</p>
+                        <span class="event-location">🏰 大礼堂</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date">28</span>
+                        <span class="month">三月</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>魁地奇杯决赛</h3>
+                        <p>格兰芬多对阵斯莱特林，一决高下</p>
+                        <span class="event-location">🏟️ 魁地奇球场</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date">02</span>
+                        <span class="month">四月</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>黑魔法防御课程展示</h3>
+                        <p>高年级学生实践展示与经验分享</p>
+                        <span class="event-location">🛡️ 防御术教室</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2 class="section-title">霍格沃茨特色</h2>
+            <div class="feature-grid">
+                <a href="spells.html" class="feature-card">
+                    <i class="feature-icon wand"></i>
+                    <h3>魔杖选择</h3>
+                    <p>每位巫师都有专属的魔杖相伴</p>
+                </a>
+                <div class="feature-card">
+                    <i class="feature-icon potion"></i>
+                    <h3>魔药课程</h3>
+                    <p>学习制作各种神奇的魔药</p>
+                </div>
+                <div class="feature-card">
+                    <i class="feature-icon broom"></i>
+                    <h3>魁地奇训练</h3>
+                    <p>体验刺激的空中运动</p>
+                </div>
+                <div class="feature-card">
+                    <i class="feature-icon book"></i>
+                    <h3>图书馆</h3>
+                    <p>收藏各类魔法书籍与古老咒语</p>
+                </div>
+                <div class="feature-card">
+                    <i class="feature-icon owl"></i>
+                    <h3>猫头鹰邮局</h3>
+                    <p>与亲朋好友保持联系</p>
+                </div>
+                <div class="feature-card">
+                    <i class="feature-icon trophy"></i>
+                    <h3>学院杯</h3>
+                    <p>展现你的才能，为学院赢得荣誉</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="houses">
+            <h2>四大学院</h2>
+            <div class="house-cards">
+                <a href="houses.html#gryffindor" class="house-card">
+                  
+                    <div class="house-image-placeholder gryffindor" style="width: 300px; height: 200px;">
+                        <img src="images/gryffindor.png" alt="格兰芬多">
+                    </div>
+                    <h3>格兰芬多</h3>
+                    <p>勇敢、无畏、正义</p>
+                </a>
+                <a href="houses.html#slytherin" class="house-card">
+                   
+                    <div class="house-image-placeholder slytherin" style="width: 300px; height: 200px;">
+                        <img src="images/slytherin.png" alt="斯莱特林">
+                    </div>
+                    <h3>斯莱特林</h3>
+                    <p>野心、精明、机智</p>
+                </a>
+                <a href="houses.html#ravenclaw" class="house-card">
+                 
+                    <div class="house-image-placeholder ravenclaw" style="width: 300px; height: 200px;">
+                        <img src="images/ravenclaw.png" alt="拉文克劳">
+
+                    </div>
+                    <h3>拉文克劳</h3>
+                    <p>智慧、学识、创造</p>
+                </a>
+                <a href="houses.html#hufflepuff" class="house-card">
+                 
+                    <div class="house-image-placeholder hufflepuff" style="width: 300px; height: 200px;">
+                        <img src="images/hufflepuff.png" alt="赫奇帕奇">
+
+                    </div>
+                    <h3>赫奇帕奇</h3>
+                    <p>忠诚、勤奋、友善</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 霍格沃茨魔法学校</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
